@@ -1,0 +1,68 @@
+
+#career{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90px;
+    font-family: 'Segoe UI', sans-serif;
+    flex-direction: column;
+}
+#car{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+#tdiv{
+    padding: 20px 10px;
+}
+#cf{
+    padding: 50px;
+    margin: 0px 100px;
+}
+.lab{
+    margin-bottom: 20px;
+}
+#cd{
+    text-align: left;
+    line-height: 1.5;
+    padding: 30px 40px;
+
+}
+#join{
+    padding:8px 40px;
+    font-size: 14px;
+    color: white;
+    background-color: green;
+    border-radius: 3px;
+    border: none;
+}
+#sub{
+    padding:7px 67px;
+    font-size: 14px;
+    color: white;
+    background-color: green;
+    border-radius: 3px;
+    border: none;
+}
+#crtit,#crthead{
+    font-size: 28px;
+
+}
+#crpara{
+    font-size: 18px;
+}
+#cimg{
+    width:100%;
+    height: 500px;
+
+}
+#cimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: center/cover;
+}
+#crtxt{
+    width: 700px;
+    font-size: 18px;
+    /* height: 500px; */
+    
+}

@@ -1,0 +1,45 @@
+#logbox{
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+   
+}
+#loginform{
+       width:300px;
+       height: 330px;
+       border-radius: 5px;
+       color: white;
+       background-color: rgba(0,50,97,255);
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+.inpbox{
+    padding: 8px 0px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+.loginbtn{
+    padding: 8px 10px;
+    background-color: green;
+    color: white;
+    /* margin-right: 5px; */
+    border: none;
+    border-radius: 5px;
+    width:200px
+
+}
+#errdiv {
+    text-decoration: none;
+    color: lightcoral;
+    text-decoration:none;
+    padding: 10px;
+}
+#signbtn{
+    color: white;
+    text-decoration: none;
+}
+

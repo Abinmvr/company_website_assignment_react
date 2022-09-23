@@ -1,0 +1,126 @@
+{
+  "footer": [
+    {
+      "head": "Company",
+      "text1": "Alumni",
+      "text2": "Newsroom",
+      "text3": "Investors",
+      "text4": "Navigate your next",
+      "text5": "corporate Responsibilities"
+    },
+    {
+      "head": "Programs",
+      "text1": "BPM",
+      "text2": "Consulting",
+      "text3": "Foundation",
+      "text4": "Leadership Institute",
+      "text5": "Public services"
+    },
+    {
+      "head": "Support",
+      "text1": "Site map",
+      "text2": "Trademarks",
+      "text3": "Terms of use",
+      "text4": "Cookie Policy",
+      "text5": "Privacy statement"
+    }
+  ],
+  "about": [
+    {
+      "counter": "50 ",
+      "text": "Countries"
+    },
+    {
+      "counter": "1023M ",
+      "text": "Customers"
+    },
+    {
+      "counter": "1500 ",
+      "text": "Employees"
+    }
+  ],
+  "achieve": [
+    {
+      "headings": "Powerful crew",
+      "image": "https://previews.123rf.com/images/ismagilov/ismagilov1904/ismagilov190400599/120809999-silhouettes-of-business-people-communicating-over-abstract-city-background-with-double-exposure-of-c.jpg",
+      "text": "Most talented and experienced crew"
+    },
+    {
+      "headings": "Hi-tech Workplaces",
+      "image": "https://www.worldatlas.com/r/w960-q80/upload/c4/bd/4c/shutterstock-591021719.jpg",
+      "text": "creative and well organized workplaces"
+    },
+    {
+      "headings": "Modern Tech",
+      "image": "https://www.industrybuying.com/wp-content/uploads/2019/07/1545815083_DqinLK_digital_shutterstock_470.jpg",
+      "text": "Most modern technologies and features"
+    }
+  ],
+  "insight": [
+    {
+      "headings": "BFSI",
+      "image": "https://gps.uml.edu/images/programs/main/cybersecurity-lock.jpg",
+      "text": "Protecting privacy in the Metaverse."
+    },
+    {
+      "headings": "Human resources",
+      "image": "https://imageio.forbes.com/specials-images/imageserve/5ef3f7eec4f2390006f0c356/GUI--Graphical-User-Interface--concept-/960x0.jpg?format=jpg&width=960",
+      "text": "The algorithmic talent marketplace"
+    },
+    {
+      "headings": "Tech giant",
+      "image": "https://media.istockphoto.com/photos/business-investment-growth-picture-id1049658912?k=20&m=1049658912&s=612x612&w=0&h=snc-DFn2u4VUhS64c0wt9XfIdbuYRz5TMlmtMFxk638=",
+      "text": "Race till we reach the top"
+    }
+  ],
+  "feed": [
+    {
+      "feedback": "Its a huge achievement to be part of this company",
+      "email": "john",
+      "id": 1
+    },
+    {
+      "feedback": "Best place to grow your career.",
+      "email": "george",
+      "id": 2
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "name": "George Hernaurd",
+      "position": "General Manager",
+      "empimage": "https://media.kairos.com/go-demo/images/subjects/george1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ben Virdee Chapman",
+      "position": "Project Lead",
+      "empimage": "https://media.kairos.com/go-demo/images/team/Ben_Virdee-Chapman.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Stephen fernandus",
+      "position": "System Engineer",
+      "empimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG4LwJs49no1YEOEY3LXXutu5v7LDqcgjyvg&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "James brito",
+      "position": "Software Developer",
+      "empimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEI64d8RkGzFmMT9KDo4X9yjUZNtczIYmiJg&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "name": "Jenitta",
+      "position": "Hr Executive",
+      "empimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ndB9dntxOtsGW-GFrdTF5PJrT8H7EoyJcA&usqp=CAU"
+    },
+    {
+      "id": 6,
+      "name": "Madona",
+      "position": "Hr Head",
+      "empimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAK4m4R_OD5W9zyfCN8E2znBYaRtsLse6-Lg&usqp=CAU"
+    }
+  ]
+}

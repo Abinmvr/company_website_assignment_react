@@ -1,0 +1,102 @@
+
+#in{
+    display: flex;
+    justify-content: space-between;
+    gap:80px;
+    margin-top: 0;
+    padding-top: 0;
+    
+} 
+#feed{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    background-color: rgba(0,50,97,255);
+    padding: 100px;
+    height: auto;
+    
+} 
+#feed a{
+    color: white;
+}
+#dispfeed{
+    width:300px;
+    /* height: 200px; */
+    color: white;  
+}
+.comment{
+        display: flex; 
+        text-align: left;
+        font-size: 16px;
+}
+.user{
+    text-align: right;
+    font-size: 14px;
+
+}
+#inpt{
+    width:500px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+}
+#inpe{
+    width:495px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+#tbox{
+    color:white;
+}
+#tbut{
+    width:505px;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    padding: 5px;
+}
+#er{
+    color: red;
+    padding: 10px 0px;
+}
+.review{
+    background-color:palegoldenrod;
+    background-color: rgba(174, 210, 245, 0.9);
+    color:black;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin-bottom:5px ;
+    
+}
+.userimg{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+.userimg img{
+    object-fit: center/cover;
+    height: 100%;
+    width: 100%;
+}
+.up{
+    margin-top: 7px;
+}
+.load{
+    width:100%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.err{
+    background-color: red;
+    width:100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

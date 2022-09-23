@@ -1,0 +1,10 @@
+import {combineReducers} from "redux"
+import feedReducer from "./feedbackRedux/feedbackReducer"
+import loginReducer from "./logRedux/loginReducer"
+import aboutReducer from "./aboutRedux/aboutReducer"
+import footerReducer from "./footerRedux/footerReducer"
+import CareerReducer from "./careerRedux/careerReducer"
+import EmployeeReducer from "./employeeRedux/EmployeeReducer"
+import insightReducer from "./insightRedux/insightReducer"
+import achieveReducer from "./achieveRedux/achieveReducer"
+export const rootReducer = combineReducers({ EmployeeReducer,footerReducer,CareerReducer,loginReducer,achieveReducer,aboutReducer,insightReducer,feedReducer})

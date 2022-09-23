@@ -1,0 +1,43 @@
+#udiv{
+    float: right;
+    color: white;
+
+}
+#udiv button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0px 20px;
+}
+#profile{
+    height:50px;
+}
+#imgp{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#imgp img{
+    width:100%;
+    height: 100%;
+    object-fit: center/cover;
+}
+#erm{
+    color:red;
+    font-weight: bold;
+}
+.pers{
+    padding: 50px;
+    padding-left: 60px;
+}
+#propic{
+    width:200px;
+    height: 200px;
+    opacity: 0.5;
+    padding: 0;
+}
+#propic img{
+    object-fit: center/cover;
+    width:100%;
+    height: 100%;
+}

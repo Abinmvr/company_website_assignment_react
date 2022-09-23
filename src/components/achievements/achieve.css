@@ -1,0 +1,46 @@
+#sec2{
+     display: flex;
+     justify-self: center;
+     align-items: center;
+     flex-direction: column;
+     padding-top: 40px;
+}
+.secdiv{
+    display: flex;
+    justify-content:space-between;
+    gap:80px;
+}
+.secbox{
+    width:30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: palegoldenrod; */
+    align-items: center;
+    text-align: center;
+}
+
+.imgdiv{
+    width:300px;
+    height: 300px;
+}
+.imgdiv img{
+    width:100%;
+    height:100%;
+    object-fit: center/cover;
+
+}
+.load{
+    width:100%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.err{
+    background-color: red;
+    width:100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
