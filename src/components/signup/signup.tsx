@@ -20,6 +20,8 @@ function Signup(){
                 }).then((response)=>{
                     const status = response.data.success;
                     console.log(status);
+                    console.log(response.data.message);
+                    
                     if(status===true){
                             history.push('/login');
                     }
