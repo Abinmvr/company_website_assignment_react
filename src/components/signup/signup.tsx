@@ -20,16 +20,15 @@ function Signup(){
                 }).then((response)=>{
                     const status = response.data.success;
                     console.log(status);
-                    console.log(response.data.message);
-                    
                     if(status===true){
+                        const errtype = response.data.message;
                             history.push('/login');
+                            setError(errtype);
                     }
                     else{
                         const errtype = response.data.message;
-                        if(errtype.errno===1062){
-                                setError("Email already exists");
-                        }
+                        setError(errtype);
+                        
                     }  
                 }); 
             }

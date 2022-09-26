@@ -19,9 +19,11 @@ function Login(){
                     password:password
                     }).then((response)=>{
                         const status = response.data.success;
-                        console.log(status);
                         if(status===true){    
                             dispatch(setLogin({...auth,isAuth:true}));
+                            const token =response.data.token;
+                            console.log(token);
+                            localStorage.setItem('token',token);
                             sessionStorage.setItem('username','user');
                             history.push('/');   
                         }
