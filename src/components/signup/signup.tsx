@@ -22,13 +22,12 @@ function Signup(){
                     console.log(status);
                     if(status===true){
                         const errtype = response.data.message;
-                            history.push('/login');
+                            history.push('/');
                             setError(errtype);
                     }
                     else{
                         const errtype = response.data.message;
-                        setError(errtype);
-                        
+                        setError(errtype); 
                     }  
                 }); 
             }
@@ -52,7 +51,7 @@ function Signup(){
                 <div>
                     <button className="signupbtn" onClick={signupFn} >SignUp</button><br/><br/> 
                 </div>
-                <Link to ='/login' id='logbtn'>Already a user ? Login</Link><br/>
+                <Link to ='/' id='logbtn'>Already a user ? Login</Link><br/>
                 <div id='errdiv'>{error}</div>
             </div>
         </div>

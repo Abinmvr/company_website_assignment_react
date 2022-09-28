@@ -7,7 +7,7 @@ export const PrivateFile=({children,...rest}:any)=>{
             <Route {...rest} render= {()=>{
                     return (sessionStorage.getItem('username')==='user'|| auth.isAuth === true) ? 
                         <div>{children}</div> :
-                        <Redirect to="/login"/>
+                        <Redirect to="/"/>
             }}/>
         )
 }

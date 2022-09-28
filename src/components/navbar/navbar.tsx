@@ -20,14 +20,14 @@ function Navbar(){
         }
         return (
                 <nav> 
-                        <NavLink to='/'>Home</NavLink>
+                        <NavLink to='/home'>Home</NavLink>
                         <NavLink to='/employee'>Employee</NavLink>
                         <NavLink to='/careers'>Careers</NavLink>
                         <NavLink to='/about'>About us</NavLink>
                         {/* <NavLink to='/signup'>Sign up</NavLink> */}
                         { submit.issubmit === true ?<NavLink to='/profile'>Profile</NavLink>:''}
                         { (sessionStorage.getItem('username')==='user'||auth.isAuth === true) ?
-                               <button id="logbtn" onClick={logOutfn}>Logout</button>: <NavLink to='/login'>Login</NavLink>
+                               <button id="logbtn" onClick={logOutfn}>Logout</button>: <NavLink to='/'>Login</NavLink>
                         }  
                 </nav> 
         );}

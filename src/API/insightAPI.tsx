@@ -4,10 +4,11 @@ import { AppDispatch } from '../redux/store'
 function getInsight(){
     return(dispatch:AppDispatch)=>{
         dispatch(setLoad(true))
-        axios.get(`${process.env.REACT_APP_LOCAL_URL}insight`)
-        .then(resp=>{
+        // axios.get(`${process.env.REACT_APP_LOCAL_URL}insight`)
+        axios.get("http://localhost:3001/insights").then((resp)=>{
             dispatch(setLoad(false))
-            dispatch(setInsight(resp.data))
+            console.log(resp.data.message)
+            dispatch(setInsight(resp.data.message))
         })
         .catch(error=>{
             dispatch(setLoad(false))

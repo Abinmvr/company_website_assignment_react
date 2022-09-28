@@ -18,11 +18,11 @@ class Achievements extends Component<getAchieveProps,{}>{
                     <div className='secdiv'>
                          {this.props.achievedata.map((data:dispalayAchieves,event:any)=>(
                               <div className="secbox" key={event}>
-                                   <h4>{data.headings}</h4>
+                                   <h4>{data.title}</h4>
                                    <div className="imgdiv">
                                         <img src={data.image} alt="img"/>
                                    </div>
-                                   <p>{data.text}</p>
+                                   <p>{data.details}</p>
                               </div>
                          ))}
                     </div> 

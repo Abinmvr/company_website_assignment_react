@@ -18,11 +18,11 @@ function Insights(){
                <div className='thirddiv'>
                          {insightdata.map((data:displayInsights,event:number)=>(
                               <div className="thirdbox" key={event}>
-                                   <h4>{data.headings}</h4>
+                                   <h4>{data.title}</h4>
                                    <div className="imdiv">
                                         <img src={data.image} alt="img"/>
                                    </div>
-                                   <p>{data.text}</p>
+                                   <p>{data.details}</p>
                               </div>
                          ))}
                </div>

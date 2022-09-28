@@ -25,7 +25,7 @@ function Login(){
                             console.log(token);
                             localStorage.setItem('token',token);
                             sessionStorage.setItem('username','user');
-                            history.push('/');   
+                            history.push('/home');   
                         }
                         else{
                             const errtype = response.data.message;
