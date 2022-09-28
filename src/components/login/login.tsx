@@ -14,7 +14,7 @@ function Login(){
         const auth=useSelector((state:RootState)=>state.loginReducer.auth);
         const logInfunction=()=>{
                 if((user!=='')&&(password!=='')){
-                    axios.post("http://localhost:3001/login",{
+                    axios.post(`${process.env.REACT_APP_NODE_APP_URL}login`,{
                     username:user,
                     password:password
                     }).then((response)=>{

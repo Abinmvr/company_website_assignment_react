@@ -5,7 +5,7 @@ function getInsight(){
     return(dispatch:AppDispatch)=>{
         dispatch(setLoad(true))
         // axios.get(`${process.env.REACT_APP_LOCAL_URL}insight`)
-        axios.get("http://localhost:3001/insights").then((resp)=>{
+        axios.get(`${process.env.REACT_APP_NODE_APP_URL}insights`).then((resp)=>{
             dispatch(setLoad(false))
             console.log(resp.data.message)
             dispatch(setInsight(resp.data.message))

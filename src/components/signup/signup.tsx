@@ -13,7 +13,7 @@ function Signup(){
         if((user!=='')&&(email!=='')&&(password!=='')){
             if(validator.isEmail(email)){
                 console.log(user,email,password);
-                axios.post("http://localhost:3001/signup",{
+                axios.post(`${process.env.REACT_APP_NODE_APP_URL}signup`,{
                     username:user,
                     email:email,
                     password:password
