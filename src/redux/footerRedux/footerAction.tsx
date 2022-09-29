@@ -5,16 +5,16 @@ function setFooter(footer:string){
         payload:footer
     };
 }
-function setLoad(loading:boolean){
+function setFooterLoad(loading:boolean){
     return{
         type:FOOTER_TYPE.LOAD_TYPE,
         payload:loading
     };
 }
-function setError(error:string){
+function setFooterError(errors:string){
     return{
         type:FOOTER_TYPE.ERROR_TYPE,
-        payload:error
+        payload:errors
     };
 }
-export {setFooter,setError,setLoad};
+export {setFooter,setFooterError,setFooterLoad};

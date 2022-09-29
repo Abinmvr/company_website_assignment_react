@@ -16,9 +16,9 @@ function MainPage(){
     return(
         <Provider store={Store}>
             <Router>
-                <Switch>
-                    <Route exact path='/'><Home/></Route>
-                    <Route  path='/about'><PrivateFile>< AboutUs/>
+                <Switch>  
+                    <Route path='/home'><PrivateFile><Home/></PrivateFile></Route>
+                    <Route path='/about'><PrivateFile>< AboutUs/>
                         <Route  path='/about/feed'><Feedback/></Route>
                     </PrivateFile></Route>
                     <Route  path='/careers'><PrivateFile>< Career/>
@@ -28,7 +28,7 @@ function MainPage(){
                     <Route  path='/employeedetail'>  <PrivateFile><EmployeeDetails/>  </PrivateFile></Route>
                     <Route  path='/profile'>  <PrivateFile>< Profile/>  </PrivateFile></Route>
                     <Route  path='/signup'><Signup/></Route>
-                    <Route  path='/login'><Login/></Route>
+                    <Route  path='/'><Login/></Route>
                     <Route path='*'><h4>404 error - Page not found</h4></Route>
                 </Switch>
             </Router>

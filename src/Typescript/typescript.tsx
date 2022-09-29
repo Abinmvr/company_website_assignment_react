@@ -1,16 +1,16 @@
 export interface dispalayAchieves{
-    headings:string,
+    title:string,
     image:string,
-    text:string
+    details:string
 }
 export interface displayAbout{
     counter:number,
     text:string
  }
  export interface displayInsights{
-    headings:string,
+    title:string,
     image:string,
-    text:string
+    details:string
 }
 export interface getAchieveProps{
     achievedata:any,
@@ -73,7 +73,7 @@ export interface employeeReducerProps{
 export interface footerReducerprops{
     footer:string[],
     loading:boolean,
-    error:string|null
+    errors:string|null
 }
 export interface insightReducerprops{
     insight:string[],

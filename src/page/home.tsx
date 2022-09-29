@@ -8,8 +8,8 @@ function Home(){
             <div>
                 <Navbar/>
                 <Slider/>
-                <Achievements/>
                 <Insights/>
+                <Achievements/>
                 <Footer/>
             </div>
     );

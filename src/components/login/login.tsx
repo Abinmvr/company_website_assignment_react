@@ -5,6 +5,8 @@ import { Link,useHistory } from 'react-router-dom';
 import { useSelector,useDispatch} from 'react-redux';
 import {setLogin} from '../../redux/logRedux/loginAction';
 import { RootState,AppDispatch } from '../../redux/store';
+// import {toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 function Login(){
         const history=useHistory();
         const[user,setUser]=useState('');
@@ -14,16 +16,19 @@ function Login(){
         const auth=useSelector((state:RootState)=>state.loginReducer.auth);
         const logInfunction=()=>{
                 if((user!=='')&&(password!=='')){
-                    axios.post("http://localhost:3001/login",{
+                    axios.post(`${process.env.REACT_APP_NODE_APP_URL}login`,{
                     username:user,
                     password:password
                     }).then((response)=>{
                         const status = response.data.success;
-                        console.log(status);
-                        if(status===true){
+                        if(status===true){    
                             dispatch(setLogin({...auth,isAuth:true}));
+                            const token =response.data.token;
+                            console.log(token);
+                            // toast.success('Login successfull !',{position:toast.POSITION.TOP_CENTER,autoClose:false});
+                            localStorage.setItem('token',token);
                             sessionStorage.setItem('username','user');
-                            history.push('/');   
+                            history.push('/home');   
                         }
                         else{
                             const errtype = response.data.message;

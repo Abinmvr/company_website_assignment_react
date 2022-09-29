@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import validator from 'validator';
 import { Link,useHistory } from 'react-router-dom';
+import {toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Signup(){
     const history =useHistory();
     const [user,setUser]=useState('');
@@ -13,7 +15,7 @@ function Signup(){
         if((user!=='')&&(email!=='')&&(password!=='')){
             if(validator.isEmail(email)){
                 console.log(user,email,password);
-                axios.post("http://localhost:3001/signup",{
+                axios.post(`${process.env.REACT_APP_NODE_APP_URL}signup`,{
                     username:user,
                     email:email,
                     password:password
@@ -21,15 +23,12 @@ function Signup(){
                     const status = response.data.success;
                     console.log(status);
                     if(status===true){
-                        const errtype = response.data.message;
-                            history.push('/login');
-                            // console.log(response);
-                            setError(errtype)
+                            toast.success('Signup successfull !',{position:toast.POSITION.TOP_CENTER,autoClose:false});
+                            history.push('/');
                     }
                     else{
                         const errtype = response.data.message;
-                        setError(errtype);
-                        
+                        setError(errtype); 
                     }  
                 }); 
             }
@@ -53,7 +52,7 @@ function Signup(){
                 <div>
                     <button className="signupbtn" onClick={signupFn} >SignUp</button><br/><br/> 
                 </div>
-                <Link to ='/login' id='logbtn'>Already a user ? Login</Link><br/>
+                <Link to ='/' id='logbtn'>Already a user ? Login</Link><br/>
                 <div id='errdiv'>{error}</div>
             </div>
         </div>

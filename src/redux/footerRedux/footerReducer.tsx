@@ -16,7 +16,7 @@ interface Footererror{
 const initialState:footerReducerprops={
                   footer :[],
                   loading:true,
-                  error:null 
+                  errors:null 
 }
 type Action= Footererror | Footerload | Footervalue
 function footerReducer(state:footerReducerprops=initialState,action:Action):any{
@@ -34,7 +34,7 @@ function footerReducer(state:footerReducerprops=initialState,action:Action):any{
        case  FOOTER_TYPE.ERROR_TYPE: 
        return{
           ...state,
-          error:action.payload
+          errors:action.payload
        }
        default:return state
    }

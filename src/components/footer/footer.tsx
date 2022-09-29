@@ -7,13 +7,13 @@ import { displayFooter } from '../../Typescript/typescript';
 function Footer(){
         const dispatch:AppDispatch =useDispatch();
         const footer=useSelector((state:RootState)=>state.footerReducer.footer);
-        const error=useSelector((state:RootState)=>state.footerReducer.error);
+        const footer_error=useSelector((state:RootState)=>state.footerReducer.error);
         const loading=useSelector((state:RootState)=>state.footerReducer.loading);
         useEffect(()=>dispatch<any>(getFooter()),[])
         return(
             <div id ="foo">
                     {loading?<p className="load">Loading...</p>:null}
-                    {error?<p className="err">Error: {error}</p>:null}
+                    {footer_error?<p className="err">Error: {footer_error}</p>:null}
                     {footer.map((data:displayFooter,even:number)=>(
                         <div key={even}>
                                 <h4>{data.head}</h4>

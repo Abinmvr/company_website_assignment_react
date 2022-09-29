@@ -4,10 +4,14 @@ import { connect } from "react-redux";
 import { RootState } from '../../redux/store';
 import { getAchieve } from '../../API/achieveAPI';
 import { getAchieveProps,dispalayAchieves } from '../../Typescript/typescript';
+import {withRouter} from 'react-router';
 class Achievements extends Component<getAchieveProps,{}>{
+     
      componentDidMount()
      {    
          this.props.getAchieve();
+     //     this.props.history;
+         
      }
      render(){
           return(
@@ -18,11 +22,11 @@ class Achievements extends Component<getAchieveProps,{}>{
                     <div className='secdiv'>
                          {this.props.achievedata.map((data:dispalayAchieves,event:any)=>(
                               <div className="secbox" key={event}>
-                                   <h4>{data.headings}</h4>
+                                   <h4>{data.title}</h4>
                                    <div className="imgdiv">
                                         <img src={data.image} alt="img"/>
                                    </div>
-                                   <p>{data.text}</p>
+                                   <p>{data.details}</p>
                               </div>
                          ))}
                     </div> 
@@ -40,5 +44,6 @@ const mapDispatchToProps=(dispatch:any)=>{
      return{
           getAchieve : ()=>dispatch(getAchieve())
      }
-}    
+}  
+// withRouter(Achievements)
 export default connect(mapStateToProps,mapDispatchToProps)(Achievements)
