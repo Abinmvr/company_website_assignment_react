@@ -5,6 +5,8 @@ import { Link,useHistory } from 'react-router-dom';
 import { useSelector,useDispatch} from 'react-redux';
 import {setLogin} from '../../redux/logRedux/loginAction';
 import { RootState,AppDispatch } from '../../redux/store';
+// import {toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 function Login(){
         const history=useHistory();
         const[user,setUser]=useState('');
@@ -23,6 +25,7 @@ function Login(){
                             dispatch(setLogin({...auth,isAuth:true}));
                             const token =response.data.token;
                             console.log(token);
+                            // toast.success('Login successfull !',{position:toast.POSITION.TOP_CENTER,autoClose:false});
                             localStorage.setItem('token',token);
                             sessionStorage.setItem('username','user');
                             history.push('/home');   

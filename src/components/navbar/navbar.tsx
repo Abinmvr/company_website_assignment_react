@@ -4,16 +4,20 @@ import { useSelector,useDispatch} from 'react-redux';
 import { RootState,AppDispatch } from '../../redux/store';
 import { setLogin } from '../../redux/logRedux/loginAction';
 import { setJoin,setSubmit } from '../../redux/careerRedux/careerAction';
+import {toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Navbar(){
         const dispatch:AppDispatch = useDispatch();
         const history =useHistory();
         const auth=useSelector((state:RootState)=>state.loginReducer.auth);
         const join=useSelector((state:RootState)=>state.CareerReducer.join);
         const submit=useSelector((state:RootState)=>state.CareerReducer.submit);
+        
         const logOutfn=()=>{
                 dispatch(setLogin({...auth,isAuth:false}));
                 dispatch(setJoin({...join,isjoin:false}));
                 dispatch(setSubmit({...submit,issubmit:false}));
+                toast.success('Logout successfull !',{position:toast.POSITION.TOP_CENTER});
                 history.push('/');
                 localStorage.clear();
                 sessionStorage.clear();

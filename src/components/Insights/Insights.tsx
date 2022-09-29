@@ -1,15 +1,18 @@
 import './Insights.css';
 import {useEffect} from "react";
 import getInsight from "../../API/insightAPI";
+import { useHistory } from 'react-router-dom';
 import { RootState, AppDispatch } from "../../redux/store";
 import { displayInsights } from "../../Typescript/typescript";
 import { useSelector,useDispatch } from "react-redux/es/exports";
 function Insights(){
      const dispatch: AppDispatch = useDispatch()
+     const history:any =useHistory();
      const error=useSelector((state:RootState)=>state.insightReducer.error)
      const insightdata=useSelector((state:RootState)=>state.insightReducer.insight)
      const loading=useSelector((state:RootState)=>state.insightReducer.loading)
-     useEffect(()=>dispatch<any>(getInsight()),[])
+  
+     useEffect(()=>dispatch<any>(getInsight(history)),[])
      return(
           <div id="sec3">
                <h2>Insights</h2>

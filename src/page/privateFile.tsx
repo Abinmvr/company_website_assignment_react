@@ -5,7 +5,7 @@ export const PrivateFile=({children,...rest}:any)=>{
         const auth=useSelector((state:RootState)=>state.loginReducer.auth);
         return(
             <Route {...rest} render= {()=>{
-                    return (sessionStorage.getItem('username')==='user'|| auth.isAuth === true) ? 
+                    return (sessionStorage.getItem('username')==='user'||auth.isAuth === true) ? 
                         <div>{children}</div> :
                         <Redirect to="/"/>
             }}/>

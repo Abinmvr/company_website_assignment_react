@@ -73,7 +73,7 @@ export interface employeeReducerProps{
 export interface footerReducerprops{
     footer:string[],
     loading:boolean,
-    error:string|null
+    errors:string|null
 }
 export interface insightReducerprops{
     insight:string[],

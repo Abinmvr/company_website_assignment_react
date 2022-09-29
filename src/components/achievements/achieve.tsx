@@ -4,10 +4,14 @@ import { connect } from "react-redux";
 import { RootState } from '../../redux/store';
 import { getAchieve } from '../../API/achieveAPI';
 import { getAchieveProps,dispalayAchieves } from '../../Typescript/typescript';
+import {withRouter} from 'react-router';
 class Achievements extends Component<getAchieveProps,{}>{
+     
      componentDidMount()
      {    
          this.props.getAchieve();
+     //     this.props.history;
+         
      }
      render(){
           return(
@@ -40,5 +44,6 @@ const mapDispatchToProps=(dispatch:any)=>{
      return{
           getAchieve : ()=>dispatch(getAchieve())
      }
-}    
+}  
+// withRouter(Achievements)
 export default connect(mapStateToProps,mapDispatchToProps)(Achievements)

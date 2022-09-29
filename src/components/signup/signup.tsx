@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import validator from 'validator';
 import { Link,useHistory } from 'react-router-dom';
+import {toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Signup(){
     const history =useHistory();
     const [user,setUser]=useState('');
@@ -21,9 +23,8 @@ function Signup(){
                     const status = response.data.success;
                     console.log(status);
                     if(status===true){
-                        const errtype = response.data.message;
+                            toast.success('Signup successfull !',{position:toast.POSITION.TOP_CENTER,autoClose:false});
                             history.push('/');
-                            setError(errtype);
                     }
                     else{
                         const errtype = response.data.message;

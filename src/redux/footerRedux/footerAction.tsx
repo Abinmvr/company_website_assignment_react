@@ -11,10 +11,10 @@ function setFooterLoad(loading:boolean){
         payload:loading
     };
 }
-function setFooterError(error:string){
+function setFooterError(errors:string){
     return{
         type:FOOTER_TYPE.ERROR_TYPE,
-        payload:error
+        payload:errors
     };
 }
 export {setFooter,setFooterError,setFooterLoad};
