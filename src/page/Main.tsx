@@ -12,6 +12,8 @@ import Employee from "../components/Employees/employee";
 import CareerForm from "../components/careers/careerform";
 import EmployeeDetails from "../components/Employees/employeedetails";
 import { BrowserRouter as Router,Route,Switch} from "react-router-dom";
+import ApplyForm from "../components/job/applyForm";
+import JobDetails from "../components/job/jobdetails";
 function MainPage(){
     return(
         <Provider store={Store}>
@@ -23,6 +25,9 @@ function MainPage(){
                     </PrivateFile></Route>
                     <Route  path='/careers'><PrivateFile>< Career/>
                         <Route  path='/careers/form'><CareerForm/></Route>
+                    </PrivateFile></Route>
+                    <Route  exact path='/job'>  <PrivateFile>< JobDetails/> 
+                        <Route  path='/job/form'>< ApplyForm/>  </Route>
                     </PrivateFile></Route>
                     <Route  path='/employee'>  <PrivateFile>< Employee/></PrivateFile></Route>
                     <Route  path='/employeedetail'>  <PrivateFile><EmployeeDetails/>  </PrivateFile></Route>

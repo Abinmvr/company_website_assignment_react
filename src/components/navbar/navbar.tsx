@@ -27,6 +27,7 @@ function Navbar(){
                         <NavLink to='/home'>Home</NavLink>
                         <NavLink to='/employee'>Employee</NavLink>
                         <NavLink to='/careers'>Careers</NavLink>
+                        <NavLink to='/job'>Jobs</NavLink>
                         <NavLink to='/about'>About us</NavLink>
                         {/* <NavLink to='/signup'>Sign up</NavLink> */}
                         { submit.issubmit === true ?<NavLink to='/profile'>Profile</NavLink>:''}

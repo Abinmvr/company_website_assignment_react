@@ -1,17 +1,15 @@
-import axios from 'axios'
+import axios from 'axios';
 import { AppDispatch } from '../redux/store'
 import {setInsight,setError,setLoad} from '../redux/insightRedux/insightAction'
 function getInsight(history:any){
-    const token:any =localStorage.getItem('token');
     return(dispatch:AppDispatch)=>{
         dispatch(setLoad(true))
-        axios.get(`${process.env.REACT_APP_NODE_APP_URL}insights`,
-        {headers:{authorization:token}}
-        ).then((resp)=>{
+        axios.get(`${process.env.REACT_APP_NODE_APP_URL}insights`
+        ).then((resp:any)=>{
             dispatch(setLoad(false))
             dispatch(setInsight(resp.data.message))
         })
-        .catch(error=>{
+        .catch((error:any)=>{
             sessionStorage.clear();
             localStorage.clear();
             history.push('/');
