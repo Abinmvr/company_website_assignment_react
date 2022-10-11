@@ -7,4 +7,5 @@ import CareerReducer from "./careerRedux/careerReducer"
 import EmployeeReducer from "./employeeRedux/EmployeeReducer"
 import insightReducer from "./insightRedux/insightReducer"
 import achieveReducer from "./achieveRedux/achieveReducer"
-export const rootReducer = combineReducers({ EmployeeReducer,footerReducer,CareerReducer,loginReducer,achieveReducer,aboutReducer,insightReducer,feedReducer})
+import jobReducer from "./jobRedux/jobReducer"
+export const rootReducer = combineReducers({ EmployeeReducer,jobReducer,footerReducer,CareerReducer,loginReducer,achieveReducer,aboutReducer,insightReducer,feedReducer})

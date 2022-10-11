@@ -12,6 +12,14 @@ export interface displayAbout{
     image:string,
     details:string
 }
+export interface displayJobs{
+    id:number|null;
+    location:string,
+    experience_in_years:number,
+    position:string,
+    description:string
+    expire_date:string
+}
 export interface getAchieveProps{
     achievedata:any,
     loading:boolean,
@@ -79,6 +87,15 @@ export interface insightReducerprops{
     insight:string[],
     loading:boolean,
     error:string|null
+}
+export interface jobReducerprops{
+    job:string[],
+    by_id:string[],
+    loading:boolean,
+    error:string|null,
+    submit:{
+        issubmit : boolean
+    }
 }
 export interface loginReducerprops{
     auth:{
