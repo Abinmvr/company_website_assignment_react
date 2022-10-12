@@ -2,7 +2,7 @@ import './about.css';
 import {useEffect} from "react";
 import Footer from '../footer/footer';
 import Navbar from "../navbar/navbar";
-import getAbout from "../../API/aboutAPI";
+import {getAbout} from "../../API/aboutAPI";
 import Feedback from '../feedback/feedback';
 import image1 from '../../asset/images/9.jpg';
 import { RootState,AppDispatch } from "../../redux/store";

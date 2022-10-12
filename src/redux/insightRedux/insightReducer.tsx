@@ -1,4 +1,4 @@
-import { INSIGHT_TYPE,LOAD_TYPE,ERROR_TYPE} from "./insightType";
+import { INSIGHT_TYPE,INSIGHT_LOAD_TYPE,INSIGHT_ERROR_TYPE} from "./insightType";
 import {insightReducerprops} from "../../Typescript/typescript";
 type Action={
     type:String,
@@ -16,12 +16,12 @@ function insightReducer(state:insightReducerprops=initialState,action:Action):an
             ...state,
             insight:action.payload
         }
-        case LOAD_TYPE:
+        case INSIGHT_LOAD_TYPE:
             return{
             ...state,
             loading:action.payload
         }
-        case ERROR_TYPE:
+        case INSIGHT_ERROR_TYPE:
             return{
             ...state,
             error:action.payload

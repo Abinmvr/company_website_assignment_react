@@ -2,7 +2,7 @@ import './achieve.css';
 import { Component } from 'react';
 import { connect } from "react-redux";
 import { RootState } from '../../redux/store';
-import { getAchieve } from '../../API/achieveAPI';
+import { getAchieve } from '../../API/homeApI';
 import { getAchieveProps,dispalayAchieves } from '../../Typescript/typescript';
 import {withRouter} from 'react-router';
 class Achievements extends Component<getAchieveProps,{}>{

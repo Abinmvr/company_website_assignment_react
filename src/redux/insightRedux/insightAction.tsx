@@ -1,4 +1,4 @@
-import { INSIGHT_TYPE,ERROR_TYPE,LOAD_TYPE } from "./insightType";
+import { INSIGHT_TYPE,INSIGHT_ERROR_TYPE,INSIGHT_LOAD_TYPE } from "./insightType";
 
 function setInsight(insight:string){
     return{
@@ -6,16 +6,16 @@ function setInsight(insight:string){
         payload:insight
     }
 }
-function setLoad(loading:boolean){
+function setInsightLoad(loading:boolean){
     return{
-        type:LOAD_TYPE,
+        type:INSIGHT_LOAD_TYPE,
         payload:loading
     }
 }
-function setError(error:string){
+function setInsightError(error:string){
     return{
-        type:ERROR_TYPE,
+        type:INSIGHT_ERROR_TYPE,
         payload:error
     }
 }
-export {setInsight,setError,setLoad};
+export {setInsight,setInsightError,setInsightLoad};

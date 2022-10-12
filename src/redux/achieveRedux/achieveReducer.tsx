@@ -1,4 +1,4 @@
-import { ACHIEVE_TYPE,LOAD_TYPE,ERROR_TYPE }from "./achieveType";
+import { ACHIEVE_TYPE,ACHIEVE_LOAD_TYPE,ACHIEVE_ERROR_TYPE }from "./achieveType";
 import { achieveReducerProps } from "../../Typescript/typescript";
 interface AchieveAction{
    type:'ACHIEVE_TYPE',
@@ -25,12 +25,12 @@ function achieveReducer(state:achieveReducerProps=initialState,action:Action):an
            ...state,
            achieve:action.payload
         }
-        case LOAD_TYPE: 
+        case ACHIEVE_LOAD_TYPE: 
         return{
            ...state,
            loading:action.payload
         }
-        case ERROR_TYPE: 
+        case ACHIEVE_ERROR_TYPE: 
         return{
            ...state,
            error:action.payload
