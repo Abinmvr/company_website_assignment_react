@@ -1,20 +1,20 @@
-import { ACHIEVE_TYPE,LOAD_TYPE,ERROR_TYPE }from "./achieveType";
+import { ACHIEVE_TYPE,ACHIEVE_LOAD_TYPE,ACHIEVE_ERROR_TYPE }from "./achieveType";
 function setAchieve(achieve:string){
     return{
         type:ACHIEVE_TYPE,
         payload:achieve
     };
 }
-function setLoad(loading:boolean){
+function setAchieveLoad(loading:boolean){
     return{
-        type:LOAD_TYPE,
+        type:ACHIEVE_LOAD_TYPE,
         payload:loading
     };
 }
-function setError(error:string){
+function setAchieveError(error:string){
     return{
-        type:ERROR_TYPE,
+        type:ACHIEVE_ERROR_TYPE,
         payload:error
     };
 }
-export {setAchieve,setLoad,setError};
+export {setAchieve,setAchieveLoad,setAchieveError};

@@ -3,7 +3,7 @@ import validator from 'validator';
 import { useState,useEffect } from "react";
 import useimg from '../../asset/images/21.png';
 import { feedprops } from '../../Typescript/typescript';
-import { displayFeed,editFeed } from "../../API/feedAPI";
+import { displayFeed,editFeed } from "../../API/aboutAPI";
 import { RootState,AppDispatch } from '../../redux/store';
 import { useDispatch,useSelector } from "react-redux/es/exports";
 function Feedback(){

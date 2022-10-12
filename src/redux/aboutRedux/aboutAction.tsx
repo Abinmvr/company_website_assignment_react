@@ -5,16 +5,16 @@ function setAbout(about:string){
         payload:about
     }
 }
-function setLoad(loading:boolean){
+function setAboutLoad(loading:boolean){
     return{
         type: LOAD_TYPE,
         payload: loading
     }
 }
-function setError(error:string){
+function setAboutError(error:string){
     return{
         type: ERROR_TYPE,
         payload: error
     }
 }
-export {setAbout,setError,setLoad};
+export {setAbout,setAboutError,setAboutLoad};

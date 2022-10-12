@@ -1,6 +1,6 @@
 import './Insights.css';
 import {useEffect} from "react";
-import getInsight from "../../API/insightAPI";
+import {getInsight} from "../../API/homeApI";
 import { useHistory } from 'react-router-dom';
 import { RootState, AppDispatch } from "../../redux/store";
 import { displayInsights } from "../../Typescript/typescript";
